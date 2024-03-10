@@ -1,0 +1,24 @@
+-- Membuat database dengan nama "uap_9154"
+CREATE DATABASE uap_9154;
+
+-- Menggunakan database yang dibuat
+USE uap_9154;
+
+-- Membuat tabel "pegawai"
+CREATE TABLE pegawai (
+    kode_pegawai INT AUTO_INCREMENT PRIMARY KEY,
+    nama_pegawai VARCHAR(255),
+    alamat VARCHAR(255),
+    telp VARCHAR(15),
+    email VARCHAR(255)
+);
+
+-- Membuat tabel "gaji"
+CREATE TABLE gaji (
+    kode_gaji INT AUTO_INCREMENT PRIMARY KEY,
+    nama_pegawai VARCHAR(255),
+    gaji_pokok DECIMAL(10, 2),
+    tunjangan DECIMAL(10, 2),
+    potongan DECIMAL(10, 2),
+    total_gaji DECIMAL(10, 2)
+);

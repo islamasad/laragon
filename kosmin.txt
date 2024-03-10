@@ -1,0 +1,6 @@
+
+
+db name id20150891_kosmin
+db user id20150891_kosmin
+host localhost
+password Pr0ject@Kosmin
